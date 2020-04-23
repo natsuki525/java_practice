@@ -104,3 +104,63 @@ class Sample7
 	}
 }
 
+// レッスン3練習
+// 3
+class Sample8
+{
+	public static void main(String[] args) throws IOException
+	{
+		System.out.println("あなたは何歳ですか？");
+
+		BufferedReader br =
+		new BufferedReader(new InputStreamReader(System.in));
+
+		String str = br.readLine();
+
+		int num = Integer.parseInt(str);
+
+		System.out.println("あなたは" + str + "歳です。");
+	}
+}
+
+// 4
+class Sample9
+{
+	public static void main(String[] args) throws IOException
+	{
+		System.out.println("円周率の値はいくつですか？");
+
+		BufferedReader br =
+		new BufferedReader(new InputStreamReader(System.in));
+
+		String str = br.readLine();
+
+		// 不正解　float num = Float.parseFloat(str);
+		double pi = Double.parseDouble(str);
+
+		// 不正解　System.out.println("円周率の値は" + str + "です。");
+		System.out.println("円周率の値は" + pi + "です。");
+	}
+}
+
+// 5
+class Sample10
+{
+	public static void main(String[] args) throws IOException
+	{
+		System.out.println("身長と体重を入力してください。");
+
+		BufferedReader br =
+		new BufferedReader(new InputStreamReader(System.in));
+
+		String str1 = br.readLine();
+		String str2 = br.readLine();
+
+		double num1 = Double.parseDouble(str1);
+		double num2 = Double.parseDouble(str2);
+
+		System.out.println("身長は" + num1 + "センチです。");
+		System.out.println("体重は" + num2 +"キロです。");
+	}
+}
+
