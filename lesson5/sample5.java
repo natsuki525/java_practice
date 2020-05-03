@@ -211,3 +211,138 @@ class Sample8
 		System.out.println(ans + "コースを選択しました。");
 	}
 }
+
+// lesson5 練習
+
+//2
+class Sample9
+{
+	public static void main(String[] args) throws IOException
+	{
+		System.out.println("整数を入力してください。");
+
+		BufferedReader br=
+		new BufferedReader(new InputStreamReader(System.in));
+
+		String str = br.readLine();
+		int res = Integer.parseInt(str);
+
+		if(res%2 == 0)
+			System.out.println(res + "は偶数です。");
+		else
+			System.out.println(res + "は奇数です。");
+	}
+}
+
+// 3
+class Sample10
+{
+	public static void main(String[] args) throws IOException
+	{
+		System.out.println("2つの整数を入力してください。");
+
+		BufferedReader br =
+		new BufferedReader(new InputStreamReader(System.in));
+
+		String str1 = br.readLine();
+		String str2 = br.readLine();
+		int res1 = Integer.parseInt(str1);
+		int res2 = Integer.parseInt(str2);
+
+		if(res1 == res2){
+			System.out.println("2つの数は同じ値です。");
+		}
+		else if(res1<res2){
+			System.out.println(res1 + "より" + res2 + "のほうが大きい値です。");
+		}
+		else if(res1<res2){
+			System.out.println(res2 + "より" + res1 + "のほうが大きい値です。");
+		}
+	}
+}
+
+// 4
+class Sample11
+{
+	public static void main(String[] args) throws IOException
+	{
+		System.out.println("0から10までの整数を入力してください。");
+
+		BufferedReader br =
+		new BufferedReader(new InputStreamReader(System.in));
+
+		String str = br.readLine();
+		int res = Integer.parseInt(str);
+
+		if (res >=0 && res <= 10){
+			System.out.println("正解です");
+		}
+		else{
+			System.out.println("まちがいです。");
+		}
+	}
+}
+
+// 5
+class Sample12
+{
+	public static void main(String[] args) throws IOException
+	{
+		System.out.println("成績を入力してください。");
+
+		BufferedReader br =
+		new BufferedReader(new InputStreamReader(System.in));
+
+		String str = br.readLine();
+		int res = Integer.parseInt(str);
+
+		if (res == 1){
+			System.out.println("もっとがんばりましょう。");
+		}
+		else if (res == 2){
+			System.out.println("もう少しがんばりましょう。");
+		}
+		else if (res == 3){
+			System.out.println("さらに上をめざしましょう。");
+		}
+		else if (res == 4){
+			System.out.println("たいへんよくできました。");
+		}
+		else if (res == 5){
+			System.out.println("たいへん優秀です。");
+		}
+	}
+}
+
+//5 模範解答
+class SampleA12
+{
+	public static void main(String[] args) throws IOException
+	{
+		System.out.println("成績を入力してください。");
+
+		BufferedReader br =
+		new BufferedReader(new InputStreamReader(System.in));
+
+		String str = br.readLine();
+		int res = Integer.parseInt(str);
+
+		switch(res){
+			case 1:
+				System.out.println("もっとがんばりましょう。");
+			break;
+			case 2:
+				System.out.println("もう少しがんばりましょう。");
+			break;
+			case 3:
+				System.out.println("さらに上をめざしましょう。");
+			break;
+			case 4:
+				System.out.println("たいへんよくできました。");
+			break;
+			case 5:
+				System.out.println("たいへん優秀です。");
+			break;
+		}
+	}
+}
