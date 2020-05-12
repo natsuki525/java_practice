@@ -97,3 +97,38 @@ class Sample6
 		System.out.println("繰り返しが終わりました。");
 	}
 }
+
+// for文をネストする
+class Sample7
+{
+	public static void main(String[] args)
+	{
+		for(int i=0; i<5; i++){
+			for(int j=0; j<3; j++){
+				System.out.println("iは" + i + ":jは" + j);
+			}
+		}
+	}
+}
+
+// if文などと組み合わせる
+class Sample8
+{
+	public static void main(String[] args)
+	{
+		boolean b1 = false;
+		for(int i=0; i<5; i++){
+			for(int j=0; j<5; j++){
+				if(b1 == false){
+					System.out.print("*");
+					b1 = true;
+				}
+				else{
+					System.out.print("-");
+					b1 = false;
+				}
+			}
+			System.out.print("\n");
+		}
+	}
+}
