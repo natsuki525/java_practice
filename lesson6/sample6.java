@@ -132,3 +132,77 @@ class Sample8
 		}
 	}
 }
+
+// break文でブロックから抜ける
+class Sample9
+{
+	public static void main(String[] args) throws IOException
+	{
+		System.out.println("何番目でループを中止しますか？(1~10)");
+
+		BufferedReader br =
+		new BufferedReader(new InputStreamReader(System.in));
+
+		String str = br.readLine();
+		int res = Integer.parseInt(str);
+
+		for(int i=1; i<=10; i++){
+			System.out.println(i + "番目の処理です。");
+			if(i == res)
+				break;
+		}
+	}
+}
+
+// switch文の中でbreakを使う
+class Sample10
+{
+	public static void main(String[] args) throws IOException
+	{
+		System.out.println("成績を入力してください。(1~5)");
+
+		BufferedReader br =
+		new BufferedReader(new InputStreamReader(System.in));
+
+		String str = br.readLine();
+		int res = Integer.parseInt(str);
+
+		switch(res){
+			case 1:
+			case 2:
+				System.out.println("もう少しがんばりましょう。");
+				break;
+			case 3:
+			case 4:
+				System.out.println("この調子でがんばりましょう。");
+				break;
+			case 5:
+				System.out.println("たいへん優秀です。");
+				break;
+			default:
+				System.out.println("1〜5までの成績を入力してください。");
+				break;
+		}
+	}
+}
+
+// continue文でブロックの最初に戻る
+class Sample11
+{
+	public static void main(String[] args) throws IOException
+	{
+		System.out.println("何番目の処理を飛ばしますか？(1〜10)");
+
+		BufferedReader br =
+		new BufferedReader(new InputStreamReader(System.in));
+
+		String str = br.readLine();
+		int res = Integer.parseInt(str);
+
+		for(int i=1; i<=10; i++){
+			if(i == res)
+				continue;
+			System.out.println(i + "番目の処理です。");
+		}
+	}
+}
