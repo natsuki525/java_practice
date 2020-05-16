@@ -206,3 +206,50 @@ class Sample11
 		}
 	}
 }
+
+// lesson6練習
+//1
+ class Sample12
+ {
+ 	public static void main(String[] args)
+ 	{
+ 		System.out.println("1〜10までの偶数を出力します。");
+
+ 		for(int i=1; i<=10; i++){
+ 			if((i%2) == 0)
+ 				System.out.println(i);
+ 		}
+ 	}
+ }
+
+// 2
+class Sample13
+{
+	public static void main(String[] args) throws IOException
+	{
+		System.out.println("テストの点数を入力してください。(0で終了)");
+
+		BufferedReader br =
+		new BufferedReader(new InputStreamReader(System.in));
+
+		int num = 0;
+		int sum = 0;
+
+		do{
+			String str = br.readLine();
+			num = Integer.parseInt(str);
+			sum += num;
+		}while(num != 0);
+
+		System.out.println("テストの合計点は" + sum + "点です。");
+	}
+}
+
+// 3
+class Sample14
+{
+	public static void main(String[] args)
+	{
+		for(int i=1; i<)
+	}
+}
